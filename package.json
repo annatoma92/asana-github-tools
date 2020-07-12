@@ -10,7 +10,7 @@
     "setup-asana-hooks": "babel-node src/tasks/setupHooks.js",
     "setup-github-hooks": "babel-node src/tasks/setupGithubHooks.js",
     "setup": "setup-tags && setup-hooks",
-    "dev": "npm run tunnel & nodemon --exec babel-node src/server.js",
+    "dev": "nodemon --exec babel-node src/server.js",
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
